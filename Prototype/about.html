@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+  </head>
+
+  <body>
+    
+    <div class="container">
+        <div class="left">
+            <h3 class="heading">About Task Manager</h3>
+            <p class="text">Hello welcome to Task Manager! Below you can find information about all the functionalities of this system.</p>
+            <form action="#">
+                <p class="description">The Home Page contains all the redirection links to every other function in the system - Calendars, Reports,
+                     About page, Contacts page and Settings. You can also log out using the button at the bottom. There is also a timer at the top that shows current time.
+                     <br><br>Calendar pages allow you to plan specific events. You can search up specific event through a text field in the left corner, or go to today's date
+                     by clicking the button "today". You can switch the months using arrows. By clicking on a specific day you select it as an active day. On the right side,
+                     you can see a "+" symbol, after clicking it you are able to set up an event. Events are marked with an underline on a specific day. Through clicking
+                     on a given event on the right side, you can delete it.
+                     <br><br>The To-Do Planner page allows you to freely add every task that has to be done, regarding all calendars. From that, you can navigate to the calendars
+                     and assign specific tasks to specific field using categories - Work or Personal. You can add a task by putting information at the top. To delete or edit or mark task as assigned, click on the 
+                     corresponding buttons next to tasks. To mark task as done, select the radio button next to a task.
+                     <br><br>Lastly, the Reports page allows you to write daily reports about the task work that has been done and send it to a greater database.  
+                </p>
+            </form>
+        </div>
+        <div class="right">
+            <div class="picture">
+                <img src="./images/about.png" alt="">
+            </div>
+            <div class="contact-info">
+                <div class="info-box">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <p>If you have additional quetions or concerns, please refer to the contact page below.</p>
+                    <div class="text">
+                        <a href="./contact.html">Contact The Creator Here</a>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="login-btn" class="btn btn-block text-uppercase" onclick="home()">Go back to Home Page</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/about.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  </body>
+</html>

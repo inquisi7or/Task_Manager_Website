@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-do Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/to-do.css">
+  </head>
+<body>
+
+    <header>
+      <div class="logo">Task Manager</div>
+      <div class="logo-line">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="./home_page.html" class="">Home Page</a>
+          </li>
+          <li>
+            <a href="./work_calendar.html" class="">Work Calendar</a>
+          </li>
+          <li>
+            <a href="./home_calendar.html" class="">Home Calendar</a>
+          </li>
+          <li>
+            <a href="./free_calendar.html" class="">Free Time Calendar</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+	<main class="app">
+    <div class="container-head">
+      <h2 class="title">To-Do Planner</h2>
+      <section class="create-todo">
+        <form id="new-todo-form">
+          <h4>Type Your Tasks Here:</h4>
+          <input 
+            type="text" 
+            placeholder="Task Name"
+            name="content"
+            id="content" />
+          
+          <h4>Related Category</h4>
+          <div class="options">
+            <label>
+              <input type="radio" name="category" id="category1" value="work" /> 
+              <span class="bubble work"></span>
+              <div>Work</div>
+            </label>
+            <label>
+              <input type="radio" name="category" id="category2" value="personal" />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Add task" />
+        </form>
+      </section>
+
+    </div>
+
+    <div class="container">
+      <section class="todo-list">
+        <h3>TO-DO LIST</h3>
+        <div class="list" id="todo-list"></div>
+      </section>
+    </div>
+
+	</main>
+
+  <script type="text/javascript" src="./scripts/to-do.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
